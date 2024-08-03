@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Date Info Result{% endblock %}
+
+{% block body %}
+    <p>The time zone {{ timezone }} has {{ offset }} minutes offset to UTC on the given day at noon.</p>
+    <p>February in this year is {{ daysInFebruary }} days long.</p>
+    <p>The specified month {{ month }} is {{ daysInMonth }} days long.</p>
+
+    <a href="{{ path('app_date_info_form') }}">Go back to form</a>
+{% endblock %}
